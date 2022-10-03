@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js" type="text/javascript"></script>
+    <style>
+        h1 {color:black; font-family: Arial, Helvetica, sans-serif;}
+        p {color:black;}
+        h2 {color:black;}
+        h3 {font-size: smaller;}
+        input {color:black;}
+        label {color:black;}
+        script {font-size: medium;}
+        a {padding-left: 80px; padding-right: 10px;padding-top: 20px;}
+      </style>
+</head>
+<body>
+    <div class="all">
+        <div class="background" id="football-field">  
+            <div class="goal">
+                <img class="picture-of-goal" src="https://www.freepnglogos.com/uploads/football-goal-png/football-goal-png-cbe-png-cbb-uff-cbb-crazy-tutorial-3.png">
+            </div>
+            <div class="goalkeeper">
+                <img class="picture-of-goalkeeper" src="https://images.vexels.com/media/users/3/218228/isolated/lists/7188e97d2621bac1a83dad695e88a066-standing-soccer-goalkeeper-illustration.png">
+            </div>
+            <div class="ball">
+                <img class="picture-of-ball" src="https://pngimg.com/uploads/football/football_PNG52797.png">
+            </div>
+        </div>
+        
+        <div class="text">
+            <div class="text-better">
+                <h1> Free kick </h1>
+                <p> This type of free kick is best hit by a right-footed player.<br> You can score a goal with a left-footed player but the chances are very slim</p>
+                <h2>Who should kick the ball</h2>
+                <h3>Hint: hover over Ronaldo's or Messi's face for the answer</h3>
+                <label for="button"> <b>Who should kick</b></label>
+                <input type="text" id="test">
+                <input id="button" type="button" value="Submit" onclick="z()"><span id="err"></span>
+                
+                
+                
+                
+                
+                
+                
+                <script>
+                    function play() {
+                      var audio = document.getElementById("audio");
+                      audio.play();
+                    }
+                </script>
+              
+                <audio id="audio" src="file:///home/uku/Documents/proge/lyts/celebrate.mp3"></audio>
+                <input type="button" id="celebrate" value="Celebrate" onclick="play()">
+                
+
+                  
+                <script>
+                    function z()
+                    {
+                    var a=document.getElementById("test");
+                    if((a.value=="Cristiano Ronaldo")||(a.value=="Ronaldo")||(a.value=="ronaldo"))
+                    {
+                    document.getElementById('err').innerHTML= '  SUIIIII, Ronaldo scored!';
+                    }
+                    else if((a.value=="Leonel Messi")||(a.value=="Messi")||(a.value=="messi"))
+                    {
+                    document.getElementById('err').innerHTML=  '  Oops! Messi missed!'
+                    }
+                    else
+                    {
+                    document.getElementById('err').innerHTML= '  Sorry, that player is unavailable';
+                    
+                    }
+                    
+                    }
+                    </script>
+
+            </div>
+            
+            <div class="social-media">  
+                <a href="https://github.com/ukuoobik" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png"
+                        width="150px"
+                        height="150px">
+                </a>
+                
+                <a href="https://www.facebook.com/uku.oobik/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/1200px-Facebook_f_logo_%282021%29.svg.png"
+                    width="150px"
+                    height="150px">
+                </a>
+                
+                <a href="https://www.instagram.com/uku_oobik/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+                        width="150px"
+                        height="150px">
+                </a>
+            </div>
+            
+            <div class="ronaldo-messi">
+                <input class="ronaldo" type="image" src="https://static.wikia.nocookie.net/the-football-database/images/6/6f/Cristiano_Ronaldo.2.png/revision/latest?cb=20210815114132"
+                onmouseover="PlaySound('mySound')" 
+                onmouseout="StopSound('mySound')">
+                <div class="ronaldo-hidden-text">He is 37 years old from Portugal and playing for Manchester United in the England Premier League (1). Cristiano Ronaldo FIFA 23 has 5 Skill moves and 4 Weak Foot, he is <b>Right-footed</b> and his workrates are High/Low. The player's height is 187cm | 6'1" and his weight is 83kg | 183lbs.</div> 
+                
+                   <audio id='mySound' src='file:///home/uku/Documents/proge/lyts/ronaldosound.mp3'>
+                    <script>
+                        function PlaySound(soundobj) {
+                        var thissound=document.getElementById(soundobj);
+                        thissound.play();
+                    }
+
+                    function StopSound(soundobj) {
+                        var thissound=document.getElementById(soundobj);
+                        thissound.pause();
+                        thissound.currentTime = 0;
+                    }
+
+                    </script>
+            </div>  
+
+
+            
+                <input class="messi" type="image" src="https://sortitoutsi.net/uploads/extractedfiles/gNmHrKRf3GsJfhnQNfDv1J1MtRn6hz4r/7458500.png"
+                onmouseover="PlaySound('mySound2')" 
+                onmouseout="StopSound('mySound2')">
+                <div class="messi-hidden-text">He is 35 years old from Argentina and playing for Paris Saint-Germain in the France Ligue 1 (1). Lionel Messi FIFA 23 has 4 Skill moves and 4 Weak Foot, he is <b>Left-footed</b> and his workrates are Low/Low. The player's height is 169cm | 5'6" and his weight is 67kg | 148lbs.</div>   
+                
+                <audio id="mySound2" src="file:///home/uku/Documents/proge/lyts/messisound.mp3">
+                
+                <script>
+                    function PlaySound(soundobj) {
+                    var thissound=document.getElementById(soundobj);
+                    thissound.play();
+                }
+
+                function StopSound(soundobj) {
+                    var thissound=document.getElementById(soundobj);
+                    thissound.pause();
+                    thissound.currentTime = 0;
+                }
+
+                </script>
+            <br>
+        </div>
+    </div>
+</body>
+</html>

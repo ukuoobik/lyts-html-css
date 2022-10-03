@@ -1,0 +1,149 @@
+ body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+            text-align: right;
+        }
+
+        .background{
+            background-image: url(https://media.istockphoto.com/photos/striped-soccer-field-picture-id472347896?k=20&m=472347896&s=612x612&w=0&h=rLYy4-lp9h7LWi2MNtW8ntTpVuj3LIlup2nr7fAHlUE=);
+            width: 100%;   
+            height: 100%;
+        }
+
+        .goal {
+            width: 100%;
+            height: 25%;
+            position: relative;
+            text-align: center;
+        }
+
+        .all{
+            max-width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            
+        }
+    
+        
+        .text {
+            margin: 0 auto;
+            text-align: left;
+            justify-content: right;
+            background-image: url(https://wallpaperaccess.com/full/4719074.jpg);
+            height:150vh;
+            width: 1900px;
+        }
+
+        .ronaldo-messi {
+            
+            
+        }
+
+        .ronaldo {
+            position: relative;
+            float: left;
+            transition-duration: 0.75s;
+            display: inline;
+        }
+
+        .ronaldo:hover {  
+            scale: 1.2;
+        }             
+
+        .ronaldo-hidden-text {
+            background-color: rgb(195, 206, 206);
+            float: inline-start;
+            height: 170px;
+            width: 1000px;
+            display: none;
+            transition-duration: 2s;
+            margin-top: 50px;
+            margin-left: 20px;
+            border-radius: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 20px;
+        }
+
+        .ronaldo:hover + .ronaldo-hidden-text {
+            display: inline;
+            transition-duration: 2s;
+            
+        }
+
+
+        .messi {
+            position: relative;
+            margin-top: 5%;   
+            transition-duration: 0.75s; 
+            float: left;
+            display: inline;
+            clear: left;
+        }
+    
+        .messi:hover {
+            scale: 1.2;
+        }
+
+        .messi-hidden-text {
+            background-color: rgb(111, 184, 184);
+            float: inline-start;
+            height: 170px;
+            width: 1000px;
+            display: none;
+            transition-duration: 2s;
+            margin-top: 7.5%;
+            border-radius: 10px;
+            padding-top: 20px;
+            
+        }
+
+        .messi:hover + .messi-hidden-text {
+            display: inline;
+            transition-duration: 2s;
+            
+        }
+
+        
+
+        .ball {
+            margin-top: 50%;
+            text-align: center;
+        }
+
+
+        .picture-of-ball {
+            width: 100px;
+            height: 100px;
+        }
+
+        .goalkeeper {
+            margin-right: 45%;
+        }
+
+        .text-better {
+            background-color: lightcyan;
+            border: 5px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-color: black;
+            width: 50%;
+            border-style: solid;
+            padding-left:15px;
+            display: inline-block;
+        }
+
+        .social-media {
+            float: right;
+            width: 904.917px;
+            height: 446.1px;
+            border: 5px;
+            border-style: solid;
+            border-bottom-right-radius: 10px;
+            border: black;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
